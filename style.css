@@ -1,0 +1,39 @@
+:root {
+    --very-pale-blue-clr: hsl(225, 100%, 98%);
+    --pale-blue-clr: hsl(225, 100%, 94%);
+    --bright-blue-clr: hsl(245, 75%, 52%);
+    --desaturated-blue-clr: hsl(224, 23%, 55%);
+    --dark-blue-clr: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body { 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#order-card { width: 28em; }
+
+#annual-plan-container { background-color: var(--very-pale-blue-clr); }
+
+#change { color: var(--bright-blue-clr); }
+#change:hover { text-decoration: none; opacity: 0.6; }
+
+#proceed-to-payment { background-color: var(--bright-blue-clr); }
+#proceed-to-payment:hover { opacity: 0.6; }
+
+#cancel-order a { color: hsl(224, 23%, 55%); }
+#cancel-order a:hover { color: var(--dark-blue-clr); }
+
+@media (max-width: 768px) { body { background-image: url("images/pattern-background-mobile.svg"); } }
+
+@media (min-width: 768.5px) { body { background-image: url("images/pattern-background-desktop.svg"); } }
